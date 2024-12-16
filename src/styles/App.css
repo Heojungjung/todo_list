@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'CookieRun-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  font-family: 'CookieRun-Regular';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: lightgoldenrodyellow;
+}
+
+.TodoItem span{
+  font-size: 20px;
+  color: rgb(38, 38, 38);
+}
+
+.TodoItem{
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.TodoItem button{
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  box-sizing: border-box;
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: .5s;
+}
+.TodoItem button:hover{
+  background-color: rgb(255, 235, 238);
+  box-shadow: inset 0px 0px 5px 0px white;
+}
+
+.TodoItem .completed span{
+  text-decoration: line-through;
+  color: grey;
+}
+
+
+.Wrap{
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.Wrap h2{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.Wrap .inputContainer{
+  display: flex;
+  gap: 10px;
+  height: 35px;
+}
+.Wrap .inputContainer input{
+  width: 75%;
+  border-radius: 15px;
+  padding-left: 10px;
+  border: 1px solid lightgray;
+  background-color: rgb(241, 241, 241);
+
+}
+
+.Wrap .inputContainer input:focus{
+  border: 2px solid  blueviolet;
+  outline: none;
+}
+.Wrap .inputContainer button{
+  border-radius: 15px;
+  width: 20%;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
